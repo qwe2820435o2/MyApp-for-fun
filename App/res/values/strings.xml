@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">麻利麻利吼</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	
+    <string-array name="titles">
+        <item >头条</item>
+        <item >娱乐</item>
+        <item >财经</item>
+        <item >科技</item>
+        <item >专题</item>
+        <item >推荐</item>
+
+
+    </string-array>
+</resources>

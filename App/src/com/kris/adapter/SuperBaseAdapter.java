@@ -18,8 +18,8 @@ import android.widget.ListView;
 
 public abstract class SuperBaseAdapter<ITEMBEANTYPE> extends MyBaseAdapter<ITEMBEANTYPE> implements OnItemClickListener{
 
-	private static final int VIEWTYPE_NORMAL = 0;//普通条目类型
-	private static final int VIEWTYPE_LOADMORE = 1;//加载更多条目类型
+	private static final int VIEWTYPE_NORMAL = 1;//普通条目类型
+	private static final int VIEWTYPE_LOADMORE = 0;//加载更多条目类型
 	private LoadMoreHolder mLoadMoreHolder;
 	private LoadMoreTask mLoadMoreTask;
 	private AbsListView mAbsListView;
@@ -48,10 +48,22 @@ public abstract class SuperBaseAdapter<ITEMBEANTYPE> extends MyBaseAdapter<ITEMB
 		if (position==getCount()-1) {
 			return VIEWTYPE_LOADMORE;
 		}else {
-			return VIEWTYPE_NORMAL;
+			return getNormalItemViewType(position);
 		}
 	}
 	
+	/**
+	 * 
+	 * TODO<得到普通条目的item类型；子类可以通过覆写该方法，得到更多条目的类型>
+	 * @param position
+	 * @return
+	 * @throw
+	 * @return int
+	 */
+	public int getNormalItemViewType(int position) {
+		return VIEWTYPE_NORMAL;
+	}
+
 	/**
 	 * 处理滑到底出现加载更多，需+1
 	 * 重载方法
@@ -70,25 +82,25 @@ public abstract class SuperBaseAdapter<ITEMBEANTYPE> extends MyBaseAdapter<ITEMB
 		BaseHolder holder=null;
 		if (convertView==null) {
 			//在这里根据Type进行判断决定根视图
-			if (getItemViewType(position)==VIEWTYPE_NORMAL) {
-				holder=getSpecialHolder();
-			}else {
+			if (getItemViewType(position)==VIEWTYPE_LOADMORE) {
 				holder=loadMoreHolder();
+			}else {
+				holder=getSpecialHolder(position);
 			}
 		}else {
 			holder=(BaseHolder) convertView.getTag();
 		}
 		
 		//得到数据，绑定数据
-		if (getItemViewType(position)==VIEWTYPE_NORMAL) {
-			holder.setDataAndRefreshHolderView(mDataSet.get(position));
-		}else {
+		if (getItemViewType(position)==VIEWTYPE_LOADMORE) {
 			if (hasLoadMore()) {
 				//滑到底部，触发加载更多数据
 				triggerLoadMoreData();
 			}else {
 				holder.setDataAndRefreshHolderView(LoadMoreHolder.LOADMORE_NONE);
 			}
+		}else {
+			holder.setDataAndRefreshHolderView(mDataSet.get(position));
 		}
 		
 		return holder.mHolderView;
@@ -197,11 +209,12 @@ public abstract class SuperBaseAdapter<ITEMBEANTYPE> extends MyBaseAdapter<ITEMB
 	/**
 	 * 
 	 * TODO<返回一个BaseHolder的子类对象>
+	 * @param position 
 	 * @return
 	 * @throw
 	 * @return BaseHolder
 	 */
-	public abstract BaseHolder getSpecialHolder();
+	public abstract BaseHolder getSpecialHolder(int position);
 	
 	/**
 	 * 处理加载失败后的重新加载

@@ -16,7 +16,6 @@ import com.kri.utils.HttpUtils;
 import com.kri.utils.IOUtils;
 import com.kri.utils.LogUtils;
 import com.kri.utils.UIUtils;
-import com.nostra13.universalimageloader.utils.IoUtils;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;

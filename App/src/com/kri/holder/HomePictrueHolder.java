@@ -18,13 +18,13 @@ import com.kri.config.Constants;
 import com.kri.utils.LogUtils;
 import com.kri.utils.UIUtils;
 import com.kris.app.R;
-import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.kris.widget.ChildViewPager;
 import com.squareup.picasso.Picasso;
 
 public class HomePictrueHolder extends BaseHolder<List<String>> implements OnPageChangeListener {
 
 	private LinearLayout mItemHomePicturecontainer;
-	private ViewPager mItemHomePicturePager;
+	private ChildViewPager mItemHomePicturePager;
 	String iv1="http://192.168.1.103:8080/GooglePlayServer/image?name=image/home01.jpg";
 	String iv2="http://192.168.1.103:8080/GooglePlayServer/image?name=image/home02.jpg";
 	String iv3="http://192.168.1.103:8080/GooglePlayServer/image?name=image/home03.jpg";
@@ -40,7 +40,7 @@ public class HomePictrueHolder extends BaseHolder<List<String>> implements OnPag
 	public View initHolderView() {
 		View view = View.inflate(UIUtils.getContext(), R.layout.item_home_picture, null);
 		mItemHomePicturecontainer = (LinearLayout) view.findViewById(R.id.item_home_picture_container_indicator);
-		mItemHomePicturePager = (ViewPager) view.findViewById(R.id.item_home_picture_pager);
+		mItemHomePicturePager = (ChildViewPager) view.findViewById(R.id.item_home_picture_pager);
 		return view;
 	}
 

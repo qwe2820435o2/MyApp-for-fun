@@ -10,7 +10,6 @@ import com.kris.fragment.AppFragment;
 import com.kris.fragment.CategoryFragment;
 import com.kris.fragment.GameFragment;
 import com.kris.fragment.HomeFragment;
-import com.kris.fragment.RecommendFragment;
 import com.kris.fragment.SubjectFragment;
 
 import android.support.v4.app.Fragment;
@@ -29,8 +28,7 @@ public class FragmentFractory {
 	public static final int FRAGMENT_APP=1;
 	public static final int FRAGMENT_GAME=2;
 	public static final int FRAGMENT_SUBJECT=3;
-	public static final int FRAGMENT_RECOMMEND=4;
-	public static final int FRAGMENT_CATEGORY=5;
+	public static final int FRAGMENT_CATEGORY=4;
 	
 	
 	
@@ -58,10 +56,6 @@ public class FragmentFractory {
 			break;
 		case FRAGMENT_SUBJECT:
 			fragment=new SubjectFragment();
-			
-			break;
-		case FRAGMENT_RECOMMEND:
-			fragment=new RecommendFragment();
 			
 			break;
 		case FRAGMENT_CATEGORY:

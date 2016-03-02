@@ -5,10 +5,10 @@
 
     <!-- 轮播图 -->
 
-    <android.support.v4.view.ViewPager
+    <com.kris.widget.ChildViewPager
         android:id="@+id/item_home_picture_pager"
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:layout_height="160dp" />
 
     <!-- 指针容器 -->
 

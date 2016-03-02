@@ -57,7 +57,7 @@ public class AppFragment extends SuperBaseFragment {
 		}
 
 		@Override
-		public BaseHolder getSpecialHolder() {
+		public BaseHolder getSpecialHolder(int position) {
 			return new ItemHolder();
 		}
 		

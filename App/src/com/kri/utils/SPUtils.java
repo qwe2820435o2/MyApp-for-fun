@@ -6,17 +6,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * @author Administrator
- * @comp 黑马程序员
- * @date 2015-9-12
- * @desc  对Sharedpreferences功能的封装
-
- * @version $Rev: 13 $
- * @author $Author: goudan $
- * @Date  $Date: 2015-10-11 10:38:03 +0800 (Sun, 11 Oct 2015) $
- * @Id    $Id: SPUtils.java 13 2015-10-11 02:38:03Z goudan $
- * @Url   $URL: https://188.188.4.100/svn/zidingyiview/SmartBeiJing/src/com/itheima13/smartbeijing/utils/SPUtils.java $
  * 
+ * TODO<对Sharedpreferences功能的封装>
+ * @author  LuLiLi
+ * @data:  2016-3-19 下午10:08:35
+ * @version:  V1.0
  */
 public class SPUtils {
 	/**

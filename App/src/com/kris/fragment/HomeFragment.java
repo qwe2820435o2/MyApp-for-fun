@@ -6,11 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import android.content.Intent;
 import android.os.SystemClock;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.ItemDecoration;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AbsListView;
@@ -32,6 +29,7 @@ import com.kri.utils.HttpUtils;
 import com.kri.utils.LogUtils;
 import com.kri.utils.OKHttpUtils;
 import com.kri.utils.UIUtils;
+import com.kris.activity.DetailActivity;
 import com.kris.adapter.SuperBaseAdapter;
 import com.kris.widget.LoadingPageController;
 import com.kris.widget.LoadingPageController.LoadResultState;
@@ -126,6 +124,11 @@ public class HomeFragment extends SuperBaseFragment {
 				int position, long id) {
 			LogUtils.e("debug", "进入item点击事件");
 			Toast.makeText(UIUtils.getContext(), mDataSet.get(position).name, 1).show();
+			
+			Intent intent = new Intent(UIUtils.getContext(),DetailActivity.class);
+			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			UIUtils.getContext().startActivity(intent);
+			
 			super.onNormalItemClick(parent, view, position, id);
 		}
 	}

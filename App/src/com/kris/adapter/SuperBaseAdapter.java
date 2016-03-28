@@ -226,6 +226,11 @@ public abstract class SuperBaseAdapter<ITEMBEANTYPE> extends MyBaseAdapter<ITEMB
 	 */
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		//因为ListView头部添加了一条，得相应地减掉
+		if (mAbsListView instanceof ListView) {
+			position=position-((ListView)mAbsListView).getHeaderViewsCount();
+		}
+		
 		if (getItemViewType(position)==VIEWTYPE_LOADMORE) {
 			if (mLoadResultState==LoadMoreHolder.LOADMORE_ERROR) {
 				triggerLoadMoreData();

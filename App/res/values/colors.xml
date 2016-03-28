@@ -5,7 +5,7 @@
     <color name="tab_text_selected">#6666FF</color>
     <color name="tab_text_normal">#333333</color>
     
-    
+    <color name="action_se">#e0dddd</color>
     <color name="item_divider">#ffd7d7d7</color>
     <color name="bg">#66cccccc</color>
     <color name="item_download_bg">#cccccccc</color>
@@ -13,5 +13,28 @@
     <color name="menu_bg_press">#cecece</color>
     <color name="app_detail_safe_normal">#999999</color>
     <color name="app_detail_safe_warning">#ff8800</color>
-
+    <color name="tab_indicator_selected">#6666FF</color>
+    <color name="tab_text_selected">#6666FF</color>
+    <color name="tab_text_normal">#333333</color>
+    <color name="item_divider">#ffd7d7d7</color>
+    <color name="bg">#66cccccc</color>
+    <color name="item_download_bg">#cccccccc</color>
+    <color name="menu_bg_normal">#f0f1f3</color>
+    <color name="menu_bg_press">#cecece</color>
+    <color name="app_detail_safe_normal">#999999</color>
+    <color name="app_detail_safe_warning">#ff8800</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white_bg">#FFFFFFFF</color>
+      <!-- 亮蓝色 -->
+    <color name="darkgray">#e9e9e9</color>
+    <color name="git_codecopy_button1">#fe9603</color>
+    <color name="git_jieshao_text">#7a7a7a</color>
+        <!-- 红紫色 -->
+    <color name="red">#FF0000</color>
+    <color name="black_news">#000000</color>
+    <color name="transparent_news">#00000000</color>
+        <!-- 薄荷色 -->
+    <color name="whitesmoke">#F5F5F5</color>
 </resources>

@@ -11,8 +11,9 @@ import android.content.Context;
 import android.os.Handler;
 
 import com.kri.utils.LogUtils;
+import com.u8.sdk.U8Application;
 
-public class MyApplication extends Application {
+public class MyApplication extends U8Application {
 	private final String TAG = "MyApplication";
 
 	private boolean isLastVersion = true;

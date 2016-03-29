@@ -5,25 +5,6 @@
     android:background="@color/darkgray"
     android:orientation="vertical" >
 
-    <!-- <include layout="@layout/gameinfo_bar_view" /> -->
-
-
-    <!--
-    <com.handmark.pulltorefresh.library.PullToRefreshListView
-        android:id="@+id/listview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="#00000000"
-        android:divider="@null"
-        android:fadingEdge="none"
-        android:fastScrollEnabled="false"
-        android:footerDividersEnabled="true"
-        android:headerDividersEnabled="true"
-        android:scrollingCache="false"
-        android:smoothScrollbar="true" >
-    </com.handmark.pulltorefresh.library.PullToRefreshListView>
-    -->
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -58,8 +39,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                         />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:id="@+id/tv_name"
@@ -76,13 +56,12 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_sign"
+                android:id="@+id/ll_switch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
@@ -109,7 +88,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/img"
-                        android:text="签到"
+                        android:text="切换账号"
                         android:textColor="@color/black_news"
                         android:textSize="16sp" />
 
@@ -118,18 +97,16 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
-                 <View
+
+                <View
                     android:layout_width="fill_parent"
                     android:layout_height="1dp"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:background="#e1e1e1" />
             </LinearLayout>
-
-            
 
             <LinearLayout
                 android:id="@+id/ll_rw"
@@ -150,8 +127,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -168,8 +144,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
+                        android:layout_marginRight="10dp" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -184,8 +159,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_centerVertical="true"
-                            android:layout_margin="15dp"
-                             />
+                            android:layout_margin="15dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -202,10 +176,8 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                             />
+                            android:layout_marginRight="10dp" />
                     </RelativeLayout>
-
                 </RelativeLayout>
 
                 <View
@@ -235,8 +207,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                         />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -253,8 +224,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
 
                 <View
@@ -299,8 +269,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:id="@+id/tv_name"
@@ -327,8 +296,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
 
                 <View
@@ -357,8 +325,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:id="@+id/tv_name2"
@@ -376,8 +343,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
 
                 <View
@@ -406,8 +372,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:id="@+id/tv_name3"
@@ -425,8 +390,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
 
                 <View
@@ -437,287 +401,45 @@
                     android:background="#e1e1e1" />
             </LinearLayout>
 
-            
-
-            <LinearLayout
-                android:id="@+id/ll_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/item_selector_center"
-                android:orientation="vertical" >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/item_selector_center" >
-
-                    <ImageView
-                        android:id="@+id/img5"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/gift" />
-
-                    <TextView
-                        android:id="@+id/tv_name5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/img5"
-                        android:text="我的礼包"
-                        android:textColor="@color/black_news"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"
-                    android:background="#e1e1e1" />
-            </LinearLayout>
-			<LinearLayout
-                android:id="@+id/ll_mygame"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/item_selector_center"
-                android:orientation="vertical"
-                 >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/item_selector_center"
-                    >
-
-                    <ImageView
-                        android:id="@+id/img"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        android:src="@drawable/ic_own_mygame" />
-
-                    <TextView
-                        android:id="@+id/tv_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/img"
-                        android:text="我的游戏"
-                        android:textColor="@color/black_news"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"
-                    android:background="#e1e1e1" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ll_myorder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/item_selector_center"
-                android:orientation="vertical"
-                 >
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/item_selector_center"
-                    >
-                    <ImageView
-                        android:id="@+id/img"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        android:src="@drawable/ic_own_oder" />
-
-                    <TextView
-                        android:id="@+id/tv_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/img"
-                        android:text="我的订阅"
-                        android:textColor="@color/black_news"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"
-                    android:background="#e1e1e1" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ll_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/item_selector_center"
-                android:orientation="vertical"
-                >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/item_selector_center" >
-
-                    <ImageView
-                        android:id="@+id/img4"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/add" />
-
-                    <TextView
-                        android:id="@+id/tv_name4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/img4"
-                        android:text="我的邀请"
-                        android:textColor="@color/black_news"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"
-                    android:background="#e1e1e1" />
-            </LinearLayout>
-             <LinearLayout
-                android:id="@+id/ll_own"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/item_selector_center"
-                android:orientation="vertical"
-                >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/item_selector_center" >
-
-                    <ImageView
-                        android:id="@+id/own"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/own" />
-
-                    <TextView
-                        android:id="@+id/tv_own"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/own"
-                        android:text="个人中心"
-                        android:textColor="@color/black_news"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"
-                    android:background="#e1e1e1" />
-            </LinearLayout>
             <LinearLayout
                 android:id="@+id/ll_fankui"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/item_selector_center"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical" >
 
-                <RelativeLayout
+                <LinearLayout
+                    android:padding="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/item_selector_center" >
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
 
-                    <ImageView
-                        android:id="@+id/img4"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/ic_own_fankui" />
+                    <EditText
+                        android:id="@+id/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_rect"
+                        android:gravity="top|left"
+                        android:hint="请输入反馈内容"
+                        android:lines="6"
+                        android:padding="5dip"
+                        android:textColor="@color/edit_write_text"
+                        android:textColorHint="@color/write_hint_text"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.0dip" />
 
                     <TextView
-                        android:id="@+id/tv_name4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_toRightOf="@+id/img4"
-                        android:text="反馈"
-                        android:textColor="@color/black_news"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
-                </RelativeLayout>
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@drawable/selector_reg_btn"
+                        android:gravity="center"
+                        android:text="提   交"
+                        android:textColor="@color/white_bg"
+                        android:textSize="18sp" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="fill_parent"
@@ -726,6 +448,7 @@
                     android:layout_marginRight="2dp"
                     android:background="#e1e1e1" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_6"
                 android:layout_width="match_parent"
@@ -744,8 +467,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                        />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:id="@+id/tv_name6"
@@ -763,8 +485,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                         />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
 
                 <View
@@ -793,8 +514,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerVertical="true"
-                        android:layout_margin="15dp"
-                         />
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:id="@+id/tv_name7"
@@ -812,8 +532,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        />
+                        android:layout_marginRight="10dp" />
                 </RelativeLayout>
 
                 <View
